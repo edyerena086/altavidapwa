@@ -5,9 +5,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { InitialFormComponent } from './initial-form/initial-form.component';
 
 const routes: Routes = [{
-	path: '',
-	component: InitialFormComponent
-}];
+		path: '',
+		component: InitialFormComponent
+	},
+	{
+		path: 'initial-form/:patientId',
+		component: InitialFormComponent	
+	}
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
